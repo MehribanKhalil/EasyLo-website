@@ -25,6 +25,7 @@ body{
 
 .navbar-left{
     float: left;
+    padding-top: 4px;
 
 }
 .navbar-right{
@@ -75,11 +76,230 @@ body{
     display: block;
     font-weight: 600;
     padding-bottom: 13px;
-    transition: all .3s;
+    transition: all .2s ease-in ;
 }
 
 .dropdown a:hover{
     color: #10C98F ;
     margin-left: 5px;
 }
+
+/* --------------HEADER CONTENT START----------- */
+
+.header-contain{
+    position: relative;
+    z-index: 999;
+}
+.overlay{
+    background-color: rgba(38, 190, 159, 0.5);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}   
+.header-content{
+    clear: both;
+    padding: 75px 120px;
+}
+.header-content__left{
+    width: 59%;
+    float: left;
+    padding:0 190px 0 100px ;
+    line-height: 1;
+}
+
+.header-content__title{
+    color: #fff;
+    font-weight: 700;
+    font-size:3.9rem ;
+}
+
+.header-content__line{
+    height: 4px;
+    background-color: #fff;
+    width: 120px;
+    margin: 30px 0;
+    /* display: block; */
+}
+
+.header-content__text{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-bottom: 50px;
+}
+
+.header-content__link{
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 17px 30px ;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+
+.header-content__link:hover{
+   background-color: #10C98F;
+   border-color: #10C98F;
+}
+
+.header-content__right{
+    /* width: 33%; */
+    float: right;
+    background-color: #fff;
+    padding: 40px ;
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 3px;
+}
+
+.header-content__right-title h3{
+    color: #0F4332;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 12px 0;
+}
+.header-content__right-title p{
+    font-size: 0.9rem;
+    color: #3F4854;
+    font-weight: 500;
+    padding: 5px 0 20px;
+}
+
+.line-green{
+    height: 3px;
+    background-color: #10C98F;
+    width: 120px;
+    margin: 13px auto 30px;
+
+}
+.header-content__right-form{
+    text-align: start;
+}
+.header-content__right-form label{
+    display: block;
+    text-transform: uppercase;
+    color: #4C5753;
+    font-weight: 500;
+    font-size: .75rem ;
+    margin: 17px 0;
+}
+
+.header-content__right-form label span{
+    color: #10C98F;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+.header-content__right-form select{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(76, 87, 83, 0.5) ;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.header-content__right-form select option{
+    background-color:#10C98F ;
+    font-size: 1rem;
+    /* padding: 10px 0; */
+}
+
+.form-submit{
+    text-align: center;
+}
+
+.form-submit button{
+    border: none;
+    background-color: #10C98F;
+    padding: 15px 0;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size:1rem ;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-submit p{
+    color: #4C5753;
+    /* font-weight: 700; */
+    font-size:1rem ;
+    padding: 20px 0;
+}
+
+/* --------------HEADER CONTENT END----------- */
+
+
+/* --------------MAIN START----------- */
+/* -------our-preference start------------ */
+
+#our-preference{
+    background-color: #F4FCFA;
+}
+
+.our-preference__title{
+    text-align: center;
+    padding: 70px 0;
+}
+
+.our-preference__title h2{
+    color: #0F4332;
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding: 12px 0;
+} 
+
+.our-preference__title p{
+    color: #6D6D6D;
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+} 
+
+.our-preference__content{
+    /* width: 100%; */
+    background-color: #F4FCFA;
+    padding: 0 80px 400px;
+
+}
+
+.our-preference__content-type{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.our-preference__content-type:hover h4 a {
+   color: #10C98F;
+}
+.our-preference__content-type h4 a{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 30px 0;
+    color: #0F4332;
+    transition: all .3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.our-preference__content-type p{
+    font-weight: 500;
+    color: #4C5753;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    padding: 0 20px;
+}
+
+
+/* --------------MAIN END----------- */
 
